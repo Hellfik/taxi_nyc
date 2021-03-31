@@ -18,7 +18,7 @@ df['dropoff_datetime'] = pd.to_datetime(df['dropoff_datetime'], format="%Y-%m-%d
 
 df.dtypes
 
-df['trip_duration']= df['trip_duration'].apply(lambda x :strftime('%H:%M:%S', gmtime(x)))
+#df['trip_duration']= df['trip_duration'].apply(lambda x :strftime('%H:%M:%S', gmtime(x)))
 
 df.dtypes
 

@@ -9,3 +9,11 @@ def haversine(lat1, lon1, lat2, lon2, to_radians=True, earth_radius=6371):
         np.cos(lat1) * np.cos(lat2) * np.sin((lon2-lon1)/2.0)**2
 
     return earth_radius * 2 * np.arcsin(np.sqrt(a))
+
+
+def vitesse_trajet(distance, temps ):
+    """Retourne la vitesse entre les le début et la fin du trajet."""
+
+    res = (distance * 1000)/ temps
+    kmh = res * 3.6 
+    return kmh
